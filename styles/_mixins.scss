@@ -13,7 +13,7 @@
     z-index: $zIndex;
 
     @if $inset > -1 {
-        inset: inset;
+        inset: $inset;
     }
     @else {
         #{$top-or-bottom}: $value1;
