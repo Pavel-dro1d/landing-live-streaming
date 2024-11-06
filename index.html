@@ -50,6 +50,49 @@
       </div>
     </header>
 
+    <div class="mobile-navigation">
+      <label for="checkboxID" class="mobile-navigation__burger">
+        <svg class="mobile-navigation__burger-icon" aria-label="burger icon">
+          <use href="assets/sprites.svg#burger-icon"></use>
+        </svg>
+      </label>
+
+      <input
+        id="checkboxID"
+        type="checkbox"
+        class="mobile-navigation__toggler"
+      />
+
+      <nav class="mobile-navigation__menu nav">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a href="#work" class="nav__list-item-link">How we work</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#about" class="nav__list-item-link">About us</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#experience" class="nav__list-item-link">Our experience</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#testimonials" class="nav__list-item-link">Testimonials</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#formSection" class="nav__list-item-link">Form</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#contacts" class="nav__list-item-link">Contacts</a>
+          </li>
+        </ul>
+
+        <label for="checkboxID" class="mobile-navigation__close">
+          <svg class="mobile-navigation__close-icon" aria-label="close icon">
+            <use href="assets/sprites.svg#cross-icon"></use>
+          </svg>
+        </label>
+      </nav>
+    </div>
+
     <main aria-label="main content">
       <section class="hero-section" aria-label="hero section">
         <div class="container">
@@ -82,7 +125,7 @@
         </div>
       </section>
 
-      <section class="work-section">
+      <section class="work-section" id="work">
         <div class="container">
           <div class="work">
             <h2 class="work__title">How we work</h2>
@@ -180,7 +223,7 @@
 
       <hr class="divider" />
 
-      <section class="about-section">
+      <section class="about-section" id="about">
         <div class="container">
           <div class="about">
             <div class="about__quality">
@@ -213,7 +256,11 @@
         </div>
       </section>
 
-      <section class="experience-section" aria-label="experience section">
+      <section
+        class="experience-section"
+        aria-label="experience section"
+        id="experience"
+      >
         <div class="container">
           <div class="experience">
             <h2 class="experience__title">Our experience</h2>
@@ -267,13 +314,21 @@
         </div>
       </section>
 
-      <section class="testimonials-section" aria-label="testimonials section">
+      <section
+        class="testimonials-section"
+        aria-label="testimonials section"
+        id="testimonials"
+      >
         <div class="container">
           <div class="testimonials">
             <h2 class="testimonials__title">Testimonials</h2>
             <div class="testimonials__slider slider">
               <figure class="wave-card">
-                <img src="assets/img/avatar_alpha.png" alt="" class="wave-card__avatar" />
+                <img
+                  src="assets/img/avatar_alpha.png"
+                  alt=""
+                  class="wave-card__avatar"
+                />
 
                 <blockquote
                   class="wave-card__quote"
@@ -312,14 +367,43 @@
         </div>
       </section>
 
-      <section class="form-section" aria-label="form section">
+      <section class="form-section" aria-label="form section" id="formSection">
         <div class="container">
           <div class="form-section__wrapper">
-            <form action="mailto:streaming_company@mail.ru" class="form" aria-labelledby="form-title">
-              <label for="input-name" id="form-title" class="form__title">Ready to get started? Drop us a line!</label>
-              <input type="text" id="input-name" placeholder="Name" class="form__name" aria-required="true" required name="fitstName" autocomplete="name">
-              <input type="email" id="input-email" placeholder="Email" class="form__email" name="email" aria-required="true" >
-              <input type="text" id="input-text" placeholder="What we can do for you?" class="form__text" name="question" aria-required="true" >
+            <form
+              action="mailto:streaming_company@mail.ru"
+              class="form"
+              aria-labelledby="form-title"
+            >
+              <label for="input-name" id="form-title" class="form__title"
+                >Ready to get started? Drop us a line!</label
+              >
+              <input
+                type="text"
+                id="input-name"
+                placeholder="Name"
+                class="form__name"
+                aria-required="true"
+                required
+                name="fitstName"
+                autocomplete="name"
+              />
+              <input
+                type="email"
+                id="input-email"
+                placeholder="Email"
+                class="form__email"
+                name="email"
+                aria-required="true"
+              />
+              <input
+                type="text"
+                id="input-text"
+                placeholder="What we can do for you?"
+                class="form__text"
+                name="question"
+                aria-required="true"
+              />
 
               <button type="submit" class="form__submit-btn">Send</button>
             </form>
@@ -328,10 +412,10 @@
 
         <div class="form-section__bg-cloud cloud--left"></div>
         <div class="form-section__bg-cloud cloud--right"></div>
-      </section> 
+      </section>
     </main>
 
-    <footer class="footer-section" aria-label="contacts section">
+    <footer class="footer-section" aria-label="contacts section" id="contacts">
       <div class="container">
         <div class="footer">
           <div class="footer__terms">
@@ -340,7 +424,9 @@
               <a href="#" class="footer__terms-link">Privacy Policy</a>
             </div>
 
-            <div class="footer__terms-rights">© CloudFlex 2024. All Rights Reserved.</div>
+            <div class="footer__terms-rights">
+              © CloudFlex 2024. All Rights Reserved.
+            </div>
           </div>
 
           <address class="footer__contacts">
